@@ -1,0 +1,63 @@
+{
+  "name": "feathers-sequelize-omggggg",
+  "description": "sequelizing",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "ivannau",
+    "email": "herdian.ivan@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^11.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run mocha",
+    "lint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.1",
+    "@feathersjs/authentication-local": "^4.5.1",
+    "@feathersjs/authentication-oauth": "^4.5.1",
+    "@feathersjs/configuration": "^4.5.1",
+    "@feathersjs/errors": "^4.5.1",
+    "@feathersjs/express": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/transport-commons": "^4.5.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-sequelize": "^6.1.0",
+    "helmet": "^3.21.2",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2"
+  }
+}
